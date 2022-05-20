@@ -1,2 +1,5 @@
-# Spring Boot Elastic Search RESTAPI
-REST API using Spring Boot &amp; Elastic search Rest Client
+# Spring Boot Elastic Search REST API
+Elastic Search REST API
+
+# Technologies
+Java, Spring Boot, Elastic Search Rest Client
