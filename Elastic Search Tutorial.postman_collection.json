@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "1e24ff9e-bea6-4d86-a49b-da4da844261c",
+		"name": "Elastic Search Tutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7110933"
+	},
+	"item": [
+		{
+			"name": "Data",
+			"item": [
+				{
+					"name": "Search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"freeText\": \"event\",\n    \"pageNumber\": 2,\n    \"nodeName\": \"DESKTOP-0CM32VA\",\n    \"aggName\": \"DNA Artarmon Office\",\n    \"topic\": null,\n    \"device\": null,\n    \"category\": null,\n    \"fromDate\": \"2020-06-15T23:59:55\",\n    \"toDate\": \"2020-06-16T00:00:09\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/elastic-search-tutorial/api/search?size=25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"elastic-search-tutorial",
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"freeText\": \"event\",\n    \"pageNumber\": 2,\n    \"nodeName\": \"DESKTOP-0CM32VA\",\n    \"aggName\": \"DNA Artarmon Office\",\n    \"topic\": null,\n    \"device\": null,\n    \"category\": null,\n    \"fromDate\": \"2020-06-15T23:59:55\",\n    \"toDate\": \"2020-06-16T00:00:09\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/elastic-search-tutorial/api/20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"elastic-search-tutorial",
+								"api",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Settings",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"max_result_window\" : 500000 \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9200/_settings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9200",
+							"path": [
+								"_settings"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "500000",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
