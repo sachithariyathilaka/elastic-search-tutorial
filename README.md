@@ -11,8 +11,8 @@ Spring boot project for elastic search tutorial.
 
 * ### Release Note
 
-    * Release: 1.0.0
-    * Date: 2024/04/27
+    * Version: 1.0.0
+    * Release Date: 2024/04/27
     * Module: Elastic Search Tutorial
     * Changes
         * Develop the elastic search related functionalities.
